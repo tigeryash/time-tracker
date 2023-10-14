@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import 'normalize.css';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2%;
+  
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+}
+
+.intro{
+  background-color: hsl(246, 80%, 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: clamp(1.5rem, 0.4286rem + 5.3571vw, 3rem);
+  border-radius: 1rem;
+}
+
+.pfp{
+  width: clamp(3.75rem, -2.8571rem + 33.0357vw, 13rem);;
+  border: .25rem solid white;
+  border-radius: 50%;
+}
+
+.info p {
+  margin-bottom: 0;
+  font-size: clamp(1rem, 0.2857rem + 3.5714vw, 2rem);
+}
+
+.name{
+  color: white;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: clamp(1.3rem, 0.0857rem + 6.0714vw, 3rem);
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 0.4286rem + 5.3571vw, 3rem);
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+}
+
+.choice{
+  border: none;
+  background-color: transparent;
+  color: hsl(235, 45%, 61%);
+  font-size:clamp(1rem, 0.2857rem + 3.5714vw, 2rem);
+}
+
+.active, .current, .section{
+  color: white;
+}
+
+.design{
+  border-radius: 1rem;
+  position: relative;
+  padding-top: clamp(2rem, -0.8571rem + 14.2857vw, 6rem);
+  overflow: hidden;
+}
+
+.section{
+  font-size: clamp(1rem, 0.2857rem + 3.5714vw, 2rem);
+}
+
+.icon{
+  position: absolute;
+  right: 5%;
+  overflow: hidden;
+  top: -8%;
+  width: clamp(5rem, -0.7143rem + 28.5714vw, 13rem);
+  z-index: 1;
+}
+
+.self-care{
+  background-color: hsl(43, 84%, 65%);
+}
+
+.work{
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play{
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study{
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise{
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+  background-color: hsl(264, 64%, 52%);
+}
+
+
+.details{
+  padding: clamp(1.2rem, -0.0857rem + 6.4286vw, 3rem);
+  background-color: hsl(235, 46%, 20%);
+  border-radius: inherit;
+  z-index: 10;
+  position: relative;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: clamp(0.6rem, 0.3143rem + 1.4286vw, 1rem);
+}
+
+.top img{
+  width:clamp(1rem, -0.2857rem + 6.4286vw, 2.8rem);
+}
+
+.bot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current{
+  font-size: clamp(2rem, 0.2857rem + 8.5714vw, 4.4rem);
+  margin: 0%;
+  padding: 0;
+  font-weight: 300;
+}
+
+.previous{
+  font-size: clamp(0.8rem, -0.0571rem + 4.2857vw, 2rem);
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+
+@media (min-width:992px){
+  body{
+    padding: 10rem;
+  }
+
+  .wrapper{
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    gap: 2vw;
+    width: 75vw;
+  }
+
+  .user{
+    grid-row: span 2;
+  }
+
+  .intro{
+    flex-direction: column;
+    align-items: baseline;
+    padding: clamp(1.4rem, -0.3714rem + 2.8571vw, 2.2rem);
+    padding-right: 4rem;
+  }
+
+  .pfp{
+    width: clamp(3.7rem, 0.1571rem + 5.7143vw, 5.3rem);
+  }
+
+  .info{
+    margin-top: clamp(0.6rem, -0.7286rem + 2.1429vw, 1.2rem);
+    margin-bottom: clamp(1rem, -1.4357rem + 3.9286vw, 2.1rem);
+  }
+
+  .previous, .info p{
+    font-size: clamp(0.6rem, -0.2857rem + 1.4286vw, 1rem);
+  } 
+
+  .name{
+    font-size: clamp(1.8rem, 0.2500rem + 2.5000vw, 2.5rem);
+  }
+
+  .buttons{
+    padding: clamp(1.4rem, -0.3714rem + 2.8571vw, 2.2rem);
+    flex-direction: column;
+    align-items: baseline;
+    height: 100%;
+  }
+
+  .choice{
+    margin-bottom: auto;
+  }
+
+  .choice, .section{
+    font-size:clamp(0.7rem, -0.4071rem + 1.7857vw, 1.2rem);
+  }
+
+  .design{
+    padding-top: clamp(1.5rem, -1.3786rem + 4.6429vw, 2.8rem);;
+  }
+
+  .icon{
+    width: clamp(3rem, -0.3214rem + 5.3571vw, 4.5rem);
+    top: -2%
+  }
+
+  .details{
+    padding: clamp(1.4rem, -0.3714rem + 2.8571vw, 2.2rem);
+  }
+
+  .top img{
+    width: clamp(0.8rem, -0.3071rem + 1.7857vw, 1.3rem);
+  }
+
+  .bot{
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: clamp(1rem, -0.7714rem + 2.8571vw, 1.8rem);
+  }
+
+  .current{
+    font-size: clamp(2.2rem, -0.2357rem + 3.9286vw, 3.3rem);
+    margin-bottom: clamp(0.7rem, 0.0357rem + 1.0714vw, 1rem);
+  }
+
+ 
+}

@@ -3,13 +3,6 @@ import './App.css'
 import pfp from './assets/image-jeremy.png'
 import data from './data.json'
 import ellipsis from './assets/icon-ellipsis.svg'
-import Exercise from './assets/icon-exercise.svg'
-import Play from './assets/icon-play.svg'
-import SelfCare from './assets/icon-self-care.svg'
-import Social from './assets/icon-social.svg'
-import Study from './assets/icon-study.svg'
-import Work from './assets/icon-work.svg'
-
 
 type Times = "daily" | "weekly" | "monthly"
 
